@@ -1,0 +1,15 @@
+@tailwind utilities;
+
+/* Your Custom Styles */
+.task-item::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  width: 28px;
+  height: 28px;
+  background-image: var(--task-image);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
