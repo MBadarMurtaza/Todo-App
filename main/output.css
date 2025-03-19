@@ -9,6 +9,8 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
     --default-font-family: var(--font-sans);
     --default-font-feature-settings: var(--font-sans--font-feature-settings);
     --default-font-variation-settings: var(
@@ -238,9 +240,6 @@
   .justify-between {
     justify-content: space-between;
   }
-  .rounded {
-    border-radius: 0.25rem;
-  }
   .rounded-\[10px\] {
     border-radius: 10px;
   }
@@ -267,15 +266,6 @@
   .bg-\[\#ff5945\] {
     background-color: #ff5945;
   }
-  .bg-\[ed\] {
-    background-color: ed;
-  }
-  .bg-\[edeef0\] {
-    background-color: edeef0;
-  }
-  .bg-\[edeef\] {
-    background-color: edeef;
-  }
   .bg-transparent {
     background-color: transparent;
   }
@@ -285,12 +275,6 @@
   .bg-gradient-to-br {
     --tw-gradient-position: to bottom right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
-  }
-  .bg-\[url\(\'\/images\/checked\.png\'\)\] {
-    background-image: url('/images/checked.png');
-  }
-  .bg-\[url\(\'\/images\/unchecked\.png\'\)\] {
-    background-image: url('/images/unchecked.png');
   }
   .from-\[\#153677\] {
     --tw-gradient-from: #153677;
@@ -353,21 +337,19 @@
     --tw-font-weight: 14px;
     font-weight: 14px;
   }
-  .font-\[500\] {
-    --tw-font-weight: 500;
-    font-weight: 500;
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
   }
   .text-\[\#555\] {
     color: #555;
   }
   .text-\[\#002765\] {
     color: #002765;
-  }
-  .text-\[\#5555\] {
-    color: #5555;
-  }
-  .text-\[\#55555\] {
-    color: #55555;
   }
   .text-black {
     color: var(--color-black);
@@ -392,133 +374,6 @@
   .select-none {
     -webkit-user-select: none;
     user-select: none;
-  }
-  .before\:absolute {
-    &::before {
-      content: var(--tw-content);
-      position: absolute;
-    }
-  }
-  .before\:top-\[12px\] {
-    &::before {
-      content: var(--tw-content);
-      top: 12px;
-    }
-  }
-  .before\:left-\[8px\] {
-    &::before {
-      content: var(--tw-content);
-      left: 8px;
-    }
-  }
-  .before\:h-\[28px\] {
-    &::before {
-      content: var(--tw-content);
-      height: 28px;
-    }
-  }
-  .before\:w-\[28px\] {
-    &::before {
-      content: var(--tw-content);
-      width: 28px;
-    }
-  }
-  .before\:rounded-\[50\%\] {
-    &::before {
-      content: var(--tw-content);
-      border-radius: 50%;
-    }
-  }
-  .before\:bg-\[url\] {
-    &::before {
-      content: var(--tw-content);
-      background-color: url;
-    }
-  }
-  .before\:bg-\[url\(\'\'\)\] {
-    &::before {
-      content: var(--tw-content);
-      background-image: url('');
-    }
-  }
-  .before\:bg-\[url\(\'\.images\/unchecked\.png\'\)\] {
-    &::before {
-      content: var(--tw-content);
-      background-image: url('.images/unchecked.png');
-    }
-  }
-  .before\:bg-\[url\(\'\/\'\)\] {
-    &::before {
-      content: var(--tw-content);
-      background-image: url('/');
-    }
-  }
-  .before\:bg-\[url\(\'\/il\'\)\] {
-    &::before {
-      content: var(--tw-content);
-      background-image: url('/il');
-    }
-  }
-  .before\:bg-\[url\(\'\/images\'\)\] {
-    &::before {
-      content: var(--tw-content);
-      background-image: url('/images');
-    }
-  }
-  .before\:bg-\[url\(\'\/images\/\'\)\] {
-    &::before {
-      content: var(--tw-content);
-      background-image: url('/images/');
-    }
-  }
-  .before\:bg-\[url\(\'\/images\/chce\'\)\] {
-    &::before {
-      content: var(--tw-content);
-      background-image: url('/images/chce');
-    }
-  }
-  .before\:bg-\[url\(\'\/images\/checked\'\)\] {
-    &::before {
-      content: var(--tw-content);
-      background-image: url('/images/checked');
-    }
-  }
-  .before\:bg-\[url\(\'\/images\/checked\.png\'\)\] {
-    &::before {
-      content: var(--tw-content);
-      background-image: url('/images/checked.png');
-    }
-  }
-  .before\:bg-\[url\(\'\/images\/unchecked\.png\'\)\] {
-    &::before {
-      content: var(--tw-content);
-      background-image: url('/images/unchecked.png');
-    }
-  }
-  .before\:bg-\[url\(\)\] {
-    &::before {
-      content: var(--tw-content);
-      background-image: url();
-    }
-  }
-  .before\:bg-cover {
-    &::before {
-      content: var(--tw-content);
-      background-size: cover;
-    }
-  }
-  .before\:bg-center {
-    &::before {
-      content: var(--tw-content);
-      background-position: center;
-    }
-  }
-  .before\:content-\[\'\'\] {
-    &::before {
-      content: var(--tw-content);
-      --tw-content: '';
-      content: var(--tw-content);
-    }
   }
   .hover\:bg-\[\#edeef0\] {
     &:hover {
@@ -587,9 +442,4 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
-}
-@property --tw-content {
-  syntax: "*";
-  initial-value: "";
-  inherits: false;
 }
