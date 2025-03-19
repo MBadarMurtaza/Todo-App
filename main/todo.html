@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <link href="./custom.css" rel="stylesheet" />
     <title>Todo App</title>
   </head>
   <body class="m-0 p-0 box-border font-sans">
@@ -13,11 +14,33 @@
       <div
         class="w-full max-w-[540px] bg-white mt-100px mx-auto mb-20px py-[40px_70px] px-[30px] rounded-[10px]"
       >
-        <h2 class="text-[#002765] text-[30px] font-[500] flex items-center mb-[20px]">
+        <h2
+          class="text-[#002765] text-[30px] font-[500] flex items-center mb-[20px]"
+        >
           To-Do List
           <img class="w-[30px] ml-[10px]" src="/images/icon.png" alt="" />
         </h2>
+        <div
+          class="flex item-center justify-between bg-[#edeef0] rounded-[30px] pl-[20px] mb-[25px]"
+        >
+          <input
+            type="text"
+            placeholder="Add your text."
+            class="flex-1 border-none outline-none bg-transparent p-[10px] font-[14px]"
+            id="inputBox"
+          />
+          <button
+            type="button"
+            class="border-none outline-none p-[16px_50px] text-white text-[16px] cursor-pointer rounded-[40px] bg-[#ff5945]"
+            id="addButton"
+            onclick="addTask()"
+          >
+            Add
+          </button>
+        </div>
+        <ul id="taskList" class="list-none"></ul>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
